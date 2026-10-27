@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Incidencias - ADSO</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f2f5; }
+        nav { background-color: #333; padding: 10px; margin-bottom: 20px; border-radius: 4px; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 950px; margin: 0 auto; background: #fff; padding: 20px; border: 2px solid #000; }
+        label { font-weight: bold; display: block; margin-top: 12px; }
+        input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; }
+        button { background-color: #1a1a1a; color: white; border: none; padding: 10px 20px; margin-top: 15px; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #333; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio / Control Diario</a></li>
+            <li><a href="bitacora.html">Bitácora de Actividades</a></li>
+            <li><a href="reporte.html">Reporte de Incidencias</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Registro de Incidencias y Novedades</h2>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre del Aprendiz:</label>
+            <input type="text" id="nombre" name="nombre" value="Nelson Yurfay Cuesta Ferrucho" required>
+
+            <label for="tipo">Tipo de Novedad:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Seleccione una opción...</option>
+                <option value="tecnica">Falla de Software o Red</option>
+                <option value="hardware">Daño de Equipo / Hardware</option>
+            </select>
+
+            <label for="descripcion">Descripción detallada:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+            <button type="submit">Enviar Reporte</button>
+        </form>
+    </div>
+</body>
+</html>
