@@ -68,34 +68,6 @@ Tres páginas independientes conectadas por un menú `<nav>` semántico:
 - [x] Navegación completa por teclado
 
 ---
-
-## 🌿 Flujo de trabajo Git
-
-```mermaid
-gitGraph
-   commit id: "inicio"
-   branch develop
-   checkout develop
-   commit id: "integración"
-   branch feature/tarea
-   checkout feature/tarea
-   commit id: "feat"
-   checkout develop
-   merge feature/tarea id: "PR aprobado"
-   checkout main
-   merge develop id: "versión estable"
-```
-
-| Rama | Propósito |
-|---|---|
-| `main` | Versión estable. **Sin push directo** |
-| `develop` | Integración de funcionalidades |
-| `feature/*` | Una rama por tarea, creada desde `develop` |
-
-**Reglas:** todo cambio entra por Pull Request revisado por al menos un compañero, y los commits siguen Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:`).
-
----
-
 ## 📎 Documentos relacionados
 
 - 📜 [Acuerdo de trabajo del equipo](TEAM_AGREEMENT.md)
